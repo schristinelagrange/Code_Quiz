@@ -1,15 +1,16 @@
 var startBtn = document.getElementById('startBtn');
 var nextBtn = document.getElementById('nextBtn');
 var quizTitle = document.getElementById('quizTitle');
-var question1 = document.getElementById('question1');
-var question2 = document.getElementById('question2');
-var questions = document.getElementById('questions');
-var count = 60;
+var questionDiv = document.getElementById('questions');
+let questions = document.getElementById('question');
+
+
+let answers = document.getElementById('answers');
 
 
 
-// Start Quiz: Make Question 1 appear and start timer
 
+// Start Quiz
 
 
 startBtn.addEventListener('click', start);  
@@ -17,16 +18,22 @@ startBtn.addEventListener('click', start);
 function start() {
     startBtn.classList.add('hide');
     quizTitle.classList.add('hide');
-    question1.classList.remove('hide');
+    questionDiv.classList.remove('hide');
     nextBtn.classList.remove('hide');
-    
-   
+    displayQuestion();
 }
 
 
-var questions = [
+function displayQuestion() {
+    return question[0]
+    
+    
+
+}
+
+var question = [
     {
-        question: "Which data type is the following value: True",
+        question: "Which data type is the following value: false",
         answers: [
             {text: "String", correct: false},
             {text: "Boolean", correct: true},
@@ -51,6 +58,8 @@ function next1(){
 
 
 // Timer
+
+
 
 
 

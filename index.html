@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
-  <header class="timer" id=timer>00:00</header>
+  <header class="timer" id=time>60</header>
 
   <body>
 
@@ -25,46 +25,16 @@
 
             </div>
 
-            <div id="questions">
-                <div class = "hide question1" id="question1">
+            <div class = "hide" id="questions">
+                <div class = "question">
                     <p>Which data type is the following value: True</p><br>
                     <form>
                     <ul>
-                        <li><input type="radio" value="string"><label for="string">String</label></li><br>
+                        <li><input type="radio" id="a" name="answer" value="a"><label for="String">String</label></li><br>
 
-                        <li><input type="radio" value="boolean"><label for="boolean">Boolean</label></li><br>
+                        <li><input type="radio" id="b" name="answer" value="b"><label for="Boolean">Boolean</label></li><br>
 
-                        <li><input type="radio" value="undefined"><label for="undefined">Undefined</label></li><br>
-
-                    </ul>
-                    </form>
-                </div>
-        
-
-                <div class = "hide question2" id="question2">
-                    <p>How do you start a single line comment in a Javascript file?</p><br>
-                    <form>
-                    <ul>
-                        <li><input type="radio" value=""><label for="answerA"> /*</label></li><br>
-
-                        <li><input type="radio" value=""><label for="answerB"> *//</label></li><br>
-
-                        <li><input type="radio" value=""><label for="answerB"> //</label></li><br>
-
-                    </ul>
-                    </form>
-                </div>
-
-
-                <div class = "hide question3" id="question3">
-                    <p>Question number 3?</p><br>
-                    <form>
-                    <ul>
-                        <li><input type="radio" value=""><label for="answerA">Answer A</label></li><br>
-
-                        <li><input type="radio" value=""><label for="answerB">Answer B</label></li><br>
-
-                        <li><input type="radio" value=""><label for="answerB">Answer C</label></li><br>
+                        <li><input type="radio" id="c" name="answer" value="c"><label for="Undefined">Undefined</label></li><br>
 
                     </ul>
                     </form>
