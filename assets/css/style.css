@@ -21,8 +21,8 @@ ul {
 main {
     display:flex;
     background-color: white;
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 450px;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 0 10px;
@@ -62,8 +62,11 @@ main {
 
 
 .timer {
+    position:absolute;
     font-weight: bold;
     font-size: 25px;
+    margin-top: -200px;
+    margin-left: 310px;
 
 }
 

@@ -2,10 +2,8 @@ var startBtn = document.getElementById('startBtn');
 var nextBtn = document.getElementById('nextBtn');
 var quizTitle = document.getElementById('quizTitle');
 var questionDiv = document.getElementById('questions');
-let questions = document.getElementById('question');
-
-
-let answers = document.getElementById('answers');
+var question = document.getElementById('question');
+var time = document.getElementById('timer');
 
 
 
@@ -20,30 +18,25 @@ function start() {
     quizTitle.classList.add('hide');
     questionDiv.classList.remove('hide');
     nextBtn.classList.remove('hide');
-    displayQuestion();
+    timer();
+    
+
+    
 }
 
 
 function displayQuestion() {
-    return question[0]
     
     
+var questions = [
+    "Which data type is the following value: false", 
+    "Question number 2", 
+    "Question number 3"  
+]
 
+console.log(questions)
 }
 
-var question = [
-    {
-        question: "Which data type is the following value: false",
-        answers: [
-            {text: "String", correct: false},
-            {text: "Boolean", correct: true},
-            {text: "Undefined", correct: false}
-        ]
-    }
-
-    
-
-]
 
 
 // Next Button and Question 2
@@ -61,7 +54,22 @@ function next1(){
 
 
 
+function timer() {
+    var timeRemaining = 60;
 
+    var timeInterval = setInterval(function(){
+    if (timeRemaining > 1) {
+        time.textContent = timeRemaining;
+        timeRemaining--;
+    } else if (timeRemaining ===1) {
+        timeRemaining--;
+    } else {
+    time.textContent = '';
+    clearInterval(timeInterval);
+    }
+
+}, 1000);
+}
 
 
 
